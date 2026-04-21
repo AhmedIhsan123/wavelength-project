@@ -1,4 +1,4 @@
-export const data = {
+export default {
 	label: "Wavelength Records",
 	founded: 2018,
 	city: "Seattle, WA",
