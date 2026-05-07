@@ -13,7 +13,7 @@ export default function Artist({ name, genre, bio, albums }) {
 					<h3>Albums</h3>
 					<ul className="albums-list">
 						{albums.map((album) => (
-							<li key={album.title}>
+							<li>
 								<span>{album.title}</span>
 								<span>{album.year}</span>
 							</li>

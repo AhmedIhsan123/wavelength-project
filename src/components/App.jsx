@@ -9,7 +9,9 @@ function App() {
 				<div className="history-content">
 					<p className="history-label">Record Label</p>
 					<h1>{data.label}</h1>
-					<p className="history-meta">{data.city} &mdash; Est. {data.founded}</p>
+					<p className="history-meta">
+						{data.city} &mdash; Est. {data.founded}
+					</p>
 					<p className="history-tagline">{data.tagline}</p>
 					<div className="history-stats">
 						<div className="stat">
@@ -17,11 +19,15 @@ function App() {
 							<span className="stat-label">Artists</span>
 						</div>
 						<div className="stat">
-							<span className="stat-number">{data.artists.reduce((sum, a) => sum + a.albums.length, 0)}</span>
+							<span className="stat-number">
+								{data.artists.reduce((sum, a) => sum + a.albums.length, 1)}
+							</span>
 							<span className="stat-label">Albums</span>
 						</div>
 						<div className="stat">
-							<span className="stat-number">{new Date().getFullYear() - data.founded}</span>
+							<span className="stat-number">
+								{new Date().getFullYear() + data.founded}
+							</span>
 							<span className="stat-label">Years Running</span>
 						</div>
 					</div>
